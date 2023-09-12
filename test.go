@@ -2,15 +2,12 @@ package main
 
 import "fmt"
 
+func split(sum int) (엑스, 와이 int) {
+	엑스 = sum * 4 / 9
+	와이 = sum - 엑스
+	return
+}
+
 func main() {
-	s := []int{2, 3, 5, 7, 11, 13}
-
-	s = s[1:4] // 1 ~ 3
-	fmt.Println(s)
-
-	s = s[:2] // 1 ~ 1
-	fmt.Println(s)
-
-	s = s[1:] // 1
-	fmt.Println(s)
+	fmt.Println(split(17))
 }
