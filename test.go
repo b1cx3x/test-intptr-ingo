@@ -5,9 +5,9 @@ import (
 	"math"
 )
 
-func split(sum int) (엑스, 와이 int) {
-	엑스 = sum * 4 / 9
-	와이 = sum - 엑스
+func split(썸 int) (엑스, 와이 int) {
+	엑스 = 썸 * 4 / 9
+	와이 = 썸 - 엑스
 	return
 }
 
@@ -15,11 +15,11 @@ func swap(x, y string) (string, string) {
 	return x + y, y + x
 }
 
-func pow(x, n, lim float64) float64 {
-	if v := math.Pow(x, n); v < lim {
+func pow(x, n, smaller float64) float64 {
+	if v := math.Pow(x, n); v < smaller {
 		return v
 	}
-	return lim
+	return smaller
 }
 
 func main() {
