@@ -5,6 +5,8 @@ import (
 	"math"
 )
 
+var a int = 1
+
 func split(썸 int) (엑스, 와이 int) {
 	엑스 = 썸 * 4 / 9
 	와이 = 썸 - 엑스
@@ -28,4 +30,6 @@ func main() {
 	fmt.Println(swap("하세요", "안녕"))
 	fmt.Printf("The Type of c is %T\n", c)
 	fmt.Println(pow(5, 2, 24.2))
+	var slice = []int{0, 1, 2, 3}
+	fmt.Println(slice[0:2])
 }
